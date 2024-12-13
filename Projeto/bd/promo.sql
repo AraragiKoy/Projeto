@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 12-Dez-2024 às 19:40
+-- Tempo de geração: 13-Dez-2024 às 18:28
 -- Versão do servidor: 10.4.20-MariaDB
 -- versão do PHP: 8.0.8
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `cliente` (
-  `id_cli` int(11) NOT NULL,
+  `id_cli` int(255) NOT NULL,
   `nome_cli` varchar(255) NOT NULL,
   `email_cli` tinytext NOT NULL,
   `faixa_cli` tinytext NOT NULL,
@@ -74,7 +74,7 @@ ALTER TABLE `cupons`
 -- AUTO_INCREMENT de tabela `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id_cli` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_cli` int(255) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `cupons`
